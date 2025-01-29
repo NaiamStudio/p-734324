@@ -23,9 +23,9 @@ export const Promotions = () => {
   ]
 
   return (
-    <section id="promotions" className="py-20 bg-background">
+    <section id="promotions" className="py-20 bg-background text-foreground">
       <div className="container max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Giletta Promotions
         </h2>
         
@@ -42,5 +42,5 @@ export const Promotions = () => {
         </Carousel>
       </div>
     </section>
-  );
-};
+  )
+}
