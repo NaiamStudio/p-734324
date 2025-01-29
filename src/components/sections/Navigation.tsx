@@ -1,7 +1,7 @@
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { useTheme } from "@/components/theme-provider"
+import { useTheme } from "next-themes"
 import { Moon, Sun } from "lucide-react"
 
 export const Navigation = () => {

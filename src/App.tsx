@@ -6,7 +6,7 @@ import NotFound from "./pages/NotFound"
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" attribute="class">
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Router>
         <Routes>
           <Route path="/" element={<Index />} />
