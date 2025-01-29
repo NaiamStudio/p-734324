@@ -7,14 +7,16 @@ import NotFound from "./pages/NotFound"
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider>
       <Router>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/es" element={<Spanish />} />
-          <Route path="/en" element={<English />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="min-h-screen bg-background text-foreground">
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/es" element={<Spanish />} />
+            <Route path="/en" element={<English />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
       </Router>
     </ThemeProvider>
   )
