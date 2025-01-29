@@ -5,11 +5,11 @@
 @layer base {
   :root {
     --background: 0 0% 100%; /* Pure white for light mode */
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 0%; /* Black text for light mode */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 0%; /* Black text for light mode */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 0%;
     --primary: 196 84% 49%;
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
@@ -24,15 +24,16 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
     --radius: 0.5rem;
+    --overflow-x: hidden;
   }
 
   .dark {
     --background: 240 10% 3.9%; /* Pure black for dark mode */
-    --foreground: 0 0% 98%;
+    --foreground: 0 0% 100%; /* White text for dark mode */
     --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card-foreground: 0 0% 100%; /* White text for dark mode */
     --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover-foreground: 0 0% 100%;
     --primary: 196 84% 49%;
     --primary-foreground: 222.2 47.4% 11.2%;
     --secondary: 217.2 32.6% 17.5%;
@@ -55,9 +56,10 @@
   }
   body {
     @apply bg-background text-foreground transition-colors duration-300;
+    margin: 0;
+    overflow-x: hidden;
   }
 }
-
 @layer utilities {
   .text-gradient {
     @apply bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent;

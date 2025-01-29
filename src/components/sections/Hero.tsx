@@ -8,12 +8,11 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 bg-cover bg-no-repeat bg-left md:bg-top"
         style={{
-          backgroundImage: 'url("/lovable-uploads/64b0ef81-c1e5-4ecf-b641-ae0b44a1b022.png")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          backgroundImage: 'url("/lovable-uploads/hero-image.jpg")',
+          backgroundPosition: '30% center',
+          backgroundPositionY: '15%', // Adjust the vertical position
         }}
       />
       
@@ -25,32 +24,28 @@ export const Hero = () => {
             : 'bg-white'
         }`}
         style={{
-          clipPath: 'polygon(0 0, 100% 0, 45% 100%, 0 100%)'
+          clipPath: 'polygon(0 0, 100% 100%, 100% 100%, 0 0)'
         }}
       />
 
       {/* Content */}
       <div className="container max-w-6xl mx-auto px-4 relative z-20">
-        <div className="max-w-2xl">
-          <h1 className={`text-6xl md:text-7xl font-bold mb-6 font-['Bruno_Giletta'] italic ${
-            theme === 'dark' 
-              ? 'text-gradient neon-white' 
-              : 'text-gray-800 neon-blue'
-          }`}>
-            Bruno Giletta
-          </h1>
-          <h2 className="text-2xl md:text-3xl mb-6 font-light dark:text-white text-gray-800">
-            Empresario, promotor<br />y manager de boxeo
-          </h2>
-          <p className="text-lg mb-12 dark:text-gray-300 text-gray-700 max-w-lg">
-            Desde el entrenamiento hasta las peleas más importantes, estoy
-            acá para apoyar a quienes sueñan en grande.
-          </p>
-          
-          <div className="space-y-4">
-            <h3 className="text-lg font-medium dark:text-white text-gray-800">Encuéntrame en</h3>
-            <SocialIcons className="gap-6" />
-          </div>
+        <div className="max-w-2xl mt-[-20%] md:mt-0 md:pl-0 pl-[10%]">
+            <h1 className={`text-4xl md:text-6xl font-bold mb-4 md:mb-6 font-['Bruno_Giletta'] italic text-white neon-effect`}>
+                Bruno Giletta
+            </h1>
+            <h2 className="text-xl md:text-2xl mb-4 md:mb-6 text-white">
+                Empresario, promotor<br />y manager de boxeo
+            </h2>
+            <p className="text-base md:text-lg mb-8 md:mb-12 text-white max-w-lg">
+                Desde el entrenamiento hasta las peleas más importantes, estoy
+                acá para apoyar a quienes sueñan en grande.
+            </p>
+            
+            <div className="space-y-4">
+                <h3 className="text-lg font-medium text-white">Encuéntrame en</h3>
+                <SocialIcons className="gap-6" />
+            </div>
         </div>
       </div>
     </section>

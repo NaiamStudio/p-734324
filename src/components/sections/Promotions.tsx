@@ -19,13 +19,29 @@ export const Promotions = () => {
         }
       ]
     },
+    {
+      period: "February 2019 - November 2022",
+      fighter: "Carlos Mendoza",
+      fights: [
+      {
+        date: "15/08/2022",
+        opponent: "Vs. Juan Perez",
+        result: "Victory by Decision"
+      },
+      {
+        date: "10/05/2021",
+        opponent: "Vs. Roberto Sanchez",
+        result: "Victory by TKO 3rd Round"
+      }
+      ]
+    }
     // Repeat for other fighters...
   ]
 
   return (
-    <section id="promotions" className="py-20 bg-background text-foreground">
+    <section id="promotions" className="py-20 bg-blue-950 text-foreground">
       <div className="container max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-1">
           Giletta Promotions
         </h2>
         

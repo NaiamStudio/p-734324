@@ -6,7 +6,7 @@ export const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
             Bruno Giletta
           </h2>
-          <div className="h-1 w-20 bg-primary mx-auto mb-12"></div>
+          <div className="h-1 w-20 bg-red-600 mx-auto mb-12"></div>
           <p className="text-lg text-center leading-relaxed">
             "Comencé ..."
           </p>
