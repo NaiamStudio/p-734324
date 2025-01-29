@@ -64,22 +64,22 @@
   }
   
   .neon-blue {
-    @apply shadow-[0_0_15px_rgba(30,174,219,0.5)];
+    @apply text-neon-blue shadow-[0_0_15px_rgba(30,174,219,0.5)];
   }
   
   .neon-red {
-    @apply shadow-[0_0_15px_rgba(234,56,76,0.5)];
+    @apply text-neon-red shadow-[0_0_15px_rgba(234,56,76,0.5)];
   }
   
   .neon-white {
-    @apply shadow-[0_0_15px_rgba(255,255,255,0.5)];
+    @apply text-white shadow-[0_0_15px_rgba(255,255,255,0.5)];
   }
 
-  .hero-overlay {
-    @apply absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-10;
+  .glass-morphism {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10;
   }
-
-  .hero-overlay-light {
-    @apply absolute inset-0 bg-gradient-to-r from-white/80 to-transparent z-10;
+  
+  .neo-blur {
+    @apply backdrop-blur-2xl bg-black/40 border border-white/10;
   }
 }

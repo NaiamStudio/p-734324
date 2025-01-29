@@ -8,7 +8,7 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 z-0 transition-opacity duration-500"
+        className="absolute inset-0 z-0"
         style={{
           backgroundImage: 'url("/lovable-uploads/64b0ef81-c1e5-4ecf-b641-ae0b44a1b022.png")',
           backgroundSize: 'cover',
@@ -17,13 +17,26 @@ export const Hero = () => {
         }}
       />
       
-      {/* Theme-based Overlay */}
-      <div className={theme === 'dark' ? 'hero-overlay' : 'hero-overlay-light'} />
+      {/* Theme-based Diagonal Overlay */}
+      <div 
+        className={`absolute inset-0 z-10 ${
+          theme === 'dark' 
+            ? 'bg-gradient-to-r from-black/90 via-black/70 to-transparent' 
+            : 'bg-gradient-to-r from-white/90 via-white/70 to-transparent'
+        }`}
+        style={{
+          clipPath: 'polygon(0 0, 100% 0, 65% 100%, 0 100%)'
+        }}
+      />
 
       {/* Content */}
       <div className="container max-w-6xl mx-auto px-4 relative z-20">
         <div className="max-w-2xl">
-          <h1 className={`text-6xl md:text-7xl font-bold mb-6 font-['Bruno_Giletta'] italic ${theme === 'dark' ? 'text-gradient neon-white' : 'text-gray-800 neon-blue'}`}>
+          <h1 className={`text-6xl md:text-7xl font-bold mb-6 font-['Bruno_Giletta'] italic ${
+            theme === 'dark' 
+              ? 'text-gradient neon-white' 
+              : 'text-gray-800 neon-blue'
+          }`}>
             Bruno Giletta
           </h1>
           <h2 className="text-2xl md:text-3xl mb-6 font-light dark:text-white text-gray-800">
