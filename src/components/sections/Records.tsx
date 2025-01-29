@@ -2,9 +2,9 @@ export const Records = () => {
   const images = Array(6).fill("/lovable-uploads/f347d5cc-0d13-402a-8eac-9c66857d0a79.png");
 
   return (
-    <section id="records" className="py-20 bg-background">
+    <section id="records" className="py-20 bg-background text-foreground">
       <div className="container max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Records
         </h2>
         
