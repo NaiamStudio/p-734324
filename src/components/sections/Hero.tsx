@@ -5,27 +5,25 @@ export const Hero = () => {
   const { theme } = useTheme()
   
   return (
-    <section className="relative min-h-screen flex items-center bg-black text-white">
+    <section className="relative min-h-screen flex items-center">
       {/* Background Image */}
       <div 
         className="absolute inset-0 z-0 transition-opacity duration-500"
         style={{
-          backgroundImage: theme === 'dark' 
-            ? 'url("/lovable-uploads/a92a9599-5fb0-4fbf-b772-4df5ab5863bc.png")'
-            : 'url("/lovable-uploads/248077f2-29f0-4a1a-96cd-64ecf6d47b05.png")',
+          backgroundImage: 'url("/lovable-uploads/64b0ef81-c1e5-4ecf-b641-ae0b44a1b022.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       />
       
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-10" />
+      {/* Theme-based Overlay */}
+      <div className={theme === 'dark' ? 'hero-overlay' : 'hero-overlay-light'} />
 
       {/* Content */}
       <div className="container max-w-6xl mx-auto px-4 relative z-20">
         <div className="max-w-2xl">
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 font-['Bruno_Giletta'] italic text-gradient neon-white">
+          <h1 className={`text-6xl md:text-7xl font-bold mb-6 font-['Bruno_Giletta'] italic ${theme === 'dark' ? 'text-gradient neon-white' : 'text-gray-800 neon-blue'}`}>
             Bruno Giletta
           </h1>
           <h2 className="text-2xl md:text-3xl mb-6 font-light dark:text-white text-gray-800">

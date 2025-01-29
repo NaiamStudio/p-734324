@@ -74,4 +74,12 @@
   .neon-white {
     @apply shadow-[0_0_15px_rgba(255,255,255,0.5)];
   }
+
+  .hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-10;
+  }
+
+  .hero-overlay-light {
+    @apply absolute inset-0 bg-gradient-to-r from-white/80 to-transparent z-10;
+  }
 }
