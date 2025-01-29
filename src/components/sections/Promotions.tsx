@@ -23,9 +23,9 @@ export const Promotions = () => {
   ]
 
   return (
-    <section id="promotions" className="py-20 bg-black text-white">
+    <section id="promotions" className="py-20 bg-background">
       <div className="container max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
           Giletta Promotions
         </h2>
         
