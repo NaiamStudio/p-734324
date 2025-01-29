@@ -1,21 +1,70 @@
+import { Menu } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { useTheme } from "@/components/theme-provider"
+import { Moon, Sun } from "lucide-react"
+
 export const Navigation = () => {
+  const { theme, setTheme } = useTheme()
+
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-background border-t py-4 md:py-6">
+    <nav className="fixed top-0 left-0 right-0 z-50 py-4 backdrop-blur-sm bg-black/20">
       <div className="container max-w-6xl mx-auto px-4">
-        <div className="flex items-center justify-between">
-          <a href="#" className="text-sm font-medium hover:text-primary">
-            Inicio
-          </a>
-          <a href="#about" className="text-sm font-medium hover:text-primary">
-            Mi historia
-          </a>
-          <a href="#promotions" className="text-sm font-medium hover:text-primary">
-            Giletta Promotions
-          </a>
-          <a href="#records" className="text-sm font-medium hover:text-primary">
-            Registros
-          </a>
-          <img src="https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/c2e76182999e8f73ed4568be686d79a052aaf6e8b15c32403c89dcdccbd99b09?placeholderIfAbsent=true&width=100 100w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/c2e76182999e8f73ed4568be686d79a052aaf6e8b15c32403c89dcdccbd99b09?placeholderIfAbsent=true&width=200 200w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/c2e76182999e8f73ed4568be686d79a052aaf6e8b15c32403c89dcdccbd99b09?placeholderIfAbsent=true&width=400 400w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/c2e76182999e8f73ed4568be686d79a052aaf6e8b15c32403c89dcdccbd99b09?placeholderIfAbsent=true&width=800 800w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/c2e76182999e8f73ed4568be686d79a052aaf6e8b15c32403c89dcdccbd99b09?placeholderIfAbsent=true&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/c2e76182999e8f73ed4568be686d79a052aaf6e8b15c32403c89dcdccbd99b09?placeholderIfAbsent=true&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/c2e76182999e8f73ed4568be686d79a052aaf6e8b15c32403c89dcdccbd99b09?placeholderIfAbsent=true&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/c2e76182999e8f73ed4568be686d79a052aaf6e8b15c32403c89dcdccbd99b09?placeholderIfAbsent=true" alt="Menu" className="w-6 h-6" />
+        <div className="flex items-center justify-between md:justify-center">
+          {/* Mobile Menu */}
+          <Sheet>
+            <SheetTrigger asChild className="md:hidden">
+              <Button variant="ghost" size="icon" className="text-white">
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-[300px] bg-black/95">
+              <div className="flex flex-col space-y-4 mt-8">
+                <a href="#" className="text-white hover:text-primary text-center py-2">
+                  Inicio
+                </a>
+                <a href="#about" className="text-white hover:text-primary text-center py-2">
+                  Mi historia
+                </a>
+                <a href="#promotions" className="text-white hover:text-primary text-center py-2">
+                  Giletta Promotions
+                </a>
+                <a href="#records" className="text-white hover:text-primary text-center py-2">
+                  Registros
+                </a>
+              </div>
+            </SheetContent>
+          </Sheet>
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center space-x-12">
+            <a href="#" className="text-white hover:text-primary transition-colors">
+              Inicio
+            </a>
+            <a href="#about" className="text-white hover:text-primary transition-colors">
+              Mi historia
+            </a>
+            <a href="#promotions" className="text-white hover:text-primary transition-colors">
+              Giletta Promotions
+            </a>
+            <a href="#records" className="text-white hover:text-primary transition-colors">
+              Registros
+            </a>
+          </div>
+
+          {/* Theme Toggle */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="text-white"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            {theme === "dark" ? (
+              <Sun className="h-5 w-5" />
+            ) : (
+              <Moon className="h-5 w-5" />
+            )}
+          </Button>
         </div>
       </div>
     </nav>
