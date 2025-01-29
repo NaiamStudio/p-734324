@@ -2,17 +2,33 @@ export const SocialIcons = () => {
   return (
     <div className="flex items-center justify-center md:justify-start gap-4">
       <a href="#" className="hover:opacity-80 transition-opacity">
-        <img src="https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/a8cf5d020582eae4bc9f0d139acf8a28865200b99850a820099e486e9c40ded6?placeholderIfAbsent=true&width=100 100w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/a8cf5d020582eae4bc9f0d139acf8a28865200b99850a820099e486e9c40ded6?placeholderIfAbsent=true&width=200 200w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/a8cf5d020582eae4bc9f0d139acf8a28865200b99850a820099e486e9c40ded6?placeholderIfAbsent=true&width=400 400w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/a8cf5d020582eae4bc9f0d139acf8a28865200b99850a820099e486e9c40ded6?placeholderIfAbsent=true&width=800 800w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/a8cf5d020582eae4bc9f0d139acf8a28865200b99850a820099e486e9c40ded6?placeholderIfAbsent=true&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/a8cf5d020582eae4bc9f0d139acf8a28865200b99850a820099e486e9c40ded6?placeholderIfAbsent=true&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/a8cf5d020582eae4bc9f0d139acf8a28865200b99850a820099e486e9c40ded6?placeholderIfAbsent=true&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/a8cf5d020582eae4bc9f0d139acf8a28865200b99850a820099e486e9c40ded6?placeholderIfAbsent=true" alt="Social Media" className="w-8 h-8" />
+        <img 
+          src="/lovable-uploads/60b7e0bf-5acc-4d6c-883e-ca67c86350cd.png" 
+          alt="BoxRec" 
+          className="w-8 h-8"
+        />
       </a>
       <a href="#" className="hover:opacity-80 transition-opacity">
-        <img src="https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/e800c299653c29a909bd0241b0e4f2afda9dbecd3a07135466988b0e6823fba0?placeholderIfAbsent=true&width=100 100w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/e800c299653c29a909bd0241b0e4f2afda9dbecd3a07135466988b0e6823fba0?placeholderIfAbsent=true&width=200 200w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/e800c299653c29a909bd0241b0e4f2afda9dbecd3a07135466988b0e6823fba0?placeholderIfAbsent=true&width=400 400w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/e800c299653c29a909bd0241b0e4f2afda9dbecd3a07135466988b0e6823fba0?placeholderIfAbsent=true&width=800 800w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/e800c299653c29a909bd0241b0e4f2afda9dbecd3a07135466988b0e6823fba0?placeholderIfAbsent=true&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/e800c299653c29a909bd0241b0e4f2afda9dbecd3a07135466988b0e6823fba0?placeholderIfAbsent=true&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/e800c299653c29a909bd0241b0e4f2afda9dbecd3a07135466988b0e6823fba0?placeholderIfAbsent=true&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/e800c299653c29a909bd0241b0e4f2afda9dbecd3a07135466988b0e6823fba0?placeholderIfAbsent=true" alt="Social Media" className="w-8 h-8" />
+        <img 
+          src="/lovable-uploads/64acad9f-8fe5-4020-807b-f5933b23900a.png" 
+          alt="Facebook" 
+          className="w-8 h-8"
+        />
       </a>
       <a href="#" className="hover:opacity-80 transition-opacity">
-        <img src="https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/71831d7f83263e6a60caa52a8145bd4b4a9edb2571bef62a31b63d567710a8da?placeholderIfAbsent=true&width=100 100w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/71831d7f83263e6a60caa52a8145bd4b4a9edb2571bef62a31b63d567710a8da?placeholderIfAbsent=true&width=200 200w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/71831d7f83263e6a60caa52a8145bd4b4a9edb2571bef62a31b63d567710a8da?placeholderIfAbsent=true&width=400 400w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/71831d7f83263e6a60caa52a8145bd4b4a9edb2571bef62a31b63d567710a8da?placeholderIfAbsent=true&width=800 800w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/71831d7f83263e6a60caa52a8145bd4b4a9edb2571bef62a31b63d567710a8da?placeholderIfAbsent=true&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/71831d7f83263e6a60caa52a8145bd4b4a9edb2571bef62a31b63d567710a8da?placeholderIfAbsent=true&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/71831d7f83263e6a60caa52a8145bd4b4a9edb2571bef62a31b63d567710a8da?placeholderIfAbsent=true&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/71831d7f83263e6a60caa52a8145bd4b4a9edb2571bef62a31b63d567710a8da?placeholderIfAbsent=true" alt="Social Media" className="w-8 h-8" />
+        <img 
+          src="/lovable-uploads/e1ca5387-c65c-431d-84f9-023420151bff.png" 
+          alt="LinkedIn" 
+          className="w-8 h-8"
+        />
       </a>
       <a href="#" className="hover:opacity-80 transition-opacity">
-        <img src="https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/51e64f3db7511422e7a670c511cd52289166c9a46cc83817d427155dcfa91a54?placeholderIfAbsent=true&width=100 100w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/51e64f3db7511422e7a670c511cd52289166c9a46cc83817d427155dcfa91a54?placeholderIfAbsent=true&width=200 200w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/51e64f3db7511422e7a670c511cd52289166c9a46cc83817d427155dcfa91a54?placeholderIfAbsent=true&width=400 400w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/51e64f3db7511422e7a670c511cd52289166c9a46cc83817d427155dcfa91a54?placeholderIfAbsent=true&width=800 800w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/51e64f3db7511422e7a670c511cd52289166c9a46cc83817d427155dcfa91a54?placeholderIfAbsent=true&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/51e64f3db7511422e7a670c511cd52289166c9a46cc83817d427155dcfa91a54?placeholderIfAbsent=true&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/51e64f3db7511422e7a670c511cd52289166c9a46cc83817d427155dcfa91a54?placeholderIfAbsent=true&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/51e64f3db7511422e7a670c511cd52289166c9a46cc83817d427155dcfa91a54?placeholderIfAbsent=true" alt="Social Media" className="w-8 h-8" />
+        <img 
+          src="/lovable-uploads/193ef464-7c32-4a47-a091-60c56dab3e9e.png" 
+          alt="Instagram" 
+          className="w-8 h-8"
+        />
       </a>
     </div>
-  )
-}
+  );
+};

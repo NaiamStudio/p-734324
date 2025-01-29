@@ -1,17 +1,19 @@
 export const Records = () => {
+  const images = Array(6).fill("/lovable-uploads/f347d5cc-0d13-402a-8eac-9c66857d0a79.png");
+
   return (
-    <section id="records" className="py-20 bg-muted">
+    <section id="records" className="py-20 bg-black text-white">
       <div className="container max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Registros
         </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {[...Array(6)].map((_, i) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {images.map((image, i) => (
             <div key={i} className="aspect-square">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/13d6480f3faa3fd2bfdff03eb2f62b8e00003c91e147e92163ad397db90b92ad?placeholderIfAbsent=true&width=100 100w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/13d6480f3faa3fd2bfdff03eb2f62b8e00003c91e147e92163ad397db90b92ad?placeholderIfAbsent=true&width=200 200w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/13d6480f3faa3fd2bfdff03eb2f62b8e00003c91e147e92163ad397db90b92ad?placeholderIfAbsent=true&width=400 400w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/13d6480f3faa3fd2bfdff03eb2f62b8e00003c91e147e92163ad397db90b92ad?placeholderIfAbsent=true&width=800 800w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/13d6480f3faa3fd2bfdff03eb2f62b8e00003c91e147e92163ad397db90b92ad?placeholderIfAbsent=true&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/13d6480f3faa3fd2bfdff03eb2f62b8e00003c91e147e92163ad397db90b92ad?placeholderIfAbsent=true&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/13d6480f3faa3fd2bfdff03eb2f62b8e00003c91e147e92163ad397db90b92ad?placeholderIfAbsent=true&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/47df8d634a8644c0a44fc35fc727734b/13d6480f3faa3fd2bfdff03eb2f62b8e00003c91e147e92163ad397db90b92ad?placeholderIfAbsent=true"
-                alt="Record"
+                src={image}
+                alt={`Record ${i + 1}`}
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
@@ -19,5 +21,5 @@ export const Records = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

@@ -1,4 +1,5 @@
 import { FightCard } from "@/components/ui/fight-card"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 
 export const Promotions = () => {
   const fighters = [
@@ -22,18 +23,24 @@ export const Promotions = () => {
   ]
 
   return (
-    <section id="promotions" className="py-20">
+    <section id="promotions" className="py-20 bg-black text-white">
       <div className="container max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Giletta Promotions
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {fighters.map((fighter, index) => (
-            <FightCard key={index} {...fighter} />
-          ))}
-        </div>
+        <Carousel className="w-full max-w-5xl mx-auto">
+          <CarouselContent>
+            {fighters.map((fighter, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <FightCard {...fighter} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </section>
-  )
-}
+  );
+};
