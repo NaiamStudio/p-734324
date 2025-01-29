@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 95%; /* Light grey for light mode */
     --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
+    --card: 0 0% 95%;
     --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
+    --popover: 0 0% 95%;
     --popover-foreground: 222.2 84% 4.9%;
     --primary: 196 84% 49%;
     --primary-foreground: 210 40% 98%;
@@ -27,11 +27,11 @@
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 210 100% 20%; /* Blue for dark mode */
     --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
+    --card: 210 100% 20%;
     --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
+    --popover: 210 100% 20%;
     --popover-foreground: 0 0% 98%;
     --primary: 196 84% 49%;
     --primary-foreground: 222.2 47.4% 11.2%;
