@@ -12,7 +12,7 @@ export const Navigation = () => {
   const closePanel = () => setIsOpen(false)
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 py-4 backdrop-blur-sm bg-white/10 dark:bg-black/50 transition-all duration-300 ease-in-out">
+    <nav className={`fixed top-0 left-0 right-0 z-50 py-4 backdrop-blur-sm transition-all duration-300 ease-in-out ${theme === "dark" ? "bg-black/50" : "bg-white/70 backdrop-blur-lg"}`}>
       <div className="container max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between md:justify-center">
           {/* Mobile Menu */}
