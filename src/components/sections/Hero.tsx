@@ -21,11 +21,11 @@ export const Hero = () => {
       <div 
         className={`absolute inset-0 z-10 ${
           theme === 'dark' 
-            ? 'bg-gradient-to-r from-black/90 via-black/70 to-transparent' 
-            : 'bg-gradient-to-r from-white/90 via-white/70 to-transparent'
+            ? 'bg-black' 
+            : 'bg-white'
         }`}
         style={{
-          clipPath: 'polygon(0 0, 100% 0, 65% 100%, 0 100%)'
+          clipPath: 'polygon(0 0, 100% 0, 45% 100%, 0 100%)'
         }}
       />
 
