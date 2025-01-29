@@ -1,3 +1,12 @@
+import { useTheme } from "next-themes"
+import { SocialIcons } from "@/components/ui/social-icons"
+import { 
+  Sheet,
+  SheetContent,
+  SheetTrigger 
+} from "@/components/ui/sheet"
+import { Button } from "@/components/ui/button"
+import { Menu, Moon, Sun } from "lucide-react"
 import { Hero } from "@/components/sections/Hero"
 import { About } from "@/components/sections/About"
 import { Promotions } from "@/components/sections/Promotions"
