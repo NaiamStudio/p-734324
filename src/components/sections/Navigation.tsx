@@ -4,12 +4,10 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { useTheme } from "next-themes"
 import { Moon, Sun } from "lucide-react"
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
 
 export const Navigation = ({ lang = "es" }: { lang?: "en" | "es" }) => {
   const { theme, setTheme } = useTheme()
   const [isOpen, setIsOpen] = useState(false)
-  const navigate = useNavigate()
 
   const closePanel = () => setIsOpen(false)
 
@@ -75,37 +73,19 @@ export const Navigation = ({ lang = "es" }: { lang?: "en" | "es" }) => {
             </a>
           </div>
 
-          {/* Language and Theme Toggles */}
-          <div className="flex items-center gap-2">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => navigate("/es")}
-              className={`${lang === "es" ? "bg-primary text-white" : ""}`}
-            >
-              ES
-            </Button>
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => navigate("/en")}
-              className={`${lang === "en" ? "bg-primary text-white" : ""}`}
-            >
-              EN
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="transition-transform transform hover:scale-110"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            >
-              {theme === "dark" ? (
-                <Sun className="h-5 w-5 transition-transform transform hover:rotate-180" />
-              ) : (
-                <Moon className="h-5 w-5 transition-transform transform hover:rotate-180" />
-              )}
-            </Button>
-          </div>
+          {/* Theme Toggle */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="transition-transform transform hover:scale-110"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            {theme === "dark" ? (
+              <Sun className="h-5 w-5 transition-transform transform hover:rotate-180" />
+            ) : (
+              <Moon className="h-5 w-5 transition-transform transform hover:rotate-180" />
+            )}
+          </Button>
         </div>
       </div>
     </nav>

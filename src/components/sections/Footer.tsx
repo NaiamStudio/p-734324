@@ -1,18 +1,28 @@
+import { useNavigate } from "react-router-dom";
+
 interface FooterProps {
   lang?: string;
 }
 
 export const Footer = ({ lang }: FooterProps) => {
+  const navigate = useNavigate();
+  
   return (
     <footer className="bg-background/50 backdrop-blur-sm py-8 border-t border-border">
       <div className="container max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-4">
-            <button className="text-sm font-medium text-black dark:text-foreground hover:text-primary transition-colors">
-              ESPAÑOL
+            <button 
+              onClick={() => navigate("/es")}
+              className={`text-sm font-medium hover:text-primary transition-colors ${lang === "es" ? "text-primary" : "text-black dark:text-foreground"}`}
+            >
+              Spanish
             </button>
-            <button className="text-sm font-medium text-black dark:text-foreground hover:text-primary transition-colors">
-              ENGLISH
+            <button 
+              onClick={() => navigate("/en")}
+              className={`text-sm font-medium hover:text-primary transition-colors ${lang === "en" ? "text-primary" : "text-black dark:text-foreground"}`}
+            >
+              English
             </button>
           </div>
           
@@ -28,5 +38,5 @@ export const Footer = ({ lang }: FooterProps) => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
