@@ -4,6 +4,7 @@ import Index from "./pages/Index"
 import Spanish from "./pages/Spanish"
 import English from "./pages/English"
 import NotFound from "./pages/NotFound"
+import SocialButtons from "./components/SocialButtons";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/en" element={<English />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <SocialButtons />
         </div>
       </Router>
     </ThemeProvider>
