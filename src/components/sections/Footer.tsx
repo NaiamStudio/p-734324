@@ -1,4 +1,8 @@
-export const Footer = () => {
+interface FooterProps {
+  lang?: string;
+}
+
+export const Footer = ({ lang }: FooterProps) => {
   return (
     <footer className="bg-background/50 backdrop-blur-sm py-8 border-t border-border">
       <div className="container max-w-6xl mx-auto px-4">
@@ -18,7 +22,7 @@ export const Footer = () => {
               onClick={() => window.location.href = 'https://naiam.studio'}
               className="text-sm font-medium text-black dark:text-foreground hover:text-primary transition-colors underline"
             >
-              Desarrollado por Naiam Studio
+              {lang === 'en' ? 'Developed by Naiam Studio' : 'Desarrollado por Naiam Studio'}
             </button>
           </div>
         </div>

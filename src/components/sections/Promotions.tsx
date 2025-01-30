@@ -1,7 +1,11 @@
 import { FightCard } from "@/components/ui/fight-card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 
-export const Promotions = () => {
+interface PromotionsProps {
+  lang?: string;
+}
+
+export const Promotions = ({ lang }: PromotionsProps) => {
   const fighters = [
     {
       period: "January 2024 - December 2025",

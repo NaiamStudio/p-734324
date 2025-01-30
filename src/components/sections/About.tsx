@@ -1,4 +1,8 @@
-export const About = () => {
+interface AboutProps {
+  lang?: string;
+}
+
+export const About = ({ lang }: AboutProps) => {
   return (
     <section id="about" className="py-20 bg-background text-foreground">
       <div className="container max-w-6xl mx-auto px-4">
@@ -8,7 +12,10 @@ export const About = () => {
           </h2>
           <div className="h-1 w-20 bg-red-600 mx-auto mb-12"></div>
           <p className="text-lg text-center leading-relaxed">
-            "Comencé ..."
+            {lang === 'en' ? 
+              "I started..." :
+              "Comencé ..."
+            }
           </p>
         </div>
       </div>
