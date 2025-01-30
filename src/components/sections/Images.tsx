@@ -1,5 +1,5 @@
 export const Images = () => {
-  const images = Array(6).fill("/lovable-uploads/f347d5cc-0d13-402a-8eac-9c66857d0a79.png");
+  const images = Array.from({ length: 6 }, (_, i) => `/public/carrousel/${i + 1}.png`);
 
   return (
     <section id="images" className="py-20 bg-background text-foreground">

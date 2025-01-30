@@ -7,7 +7,7 @@ interface SocialIconsProps {
 export const SocialIcons = ({ className }: SocialIconsProps) => {
   return (
     <div className={cn("flex flex-col items-start gap-2", className)}>
-      <a href="#" className="text-white hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+      <a href="https://boxrec.com/en/manager/1255795" className="text-white hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
         <img src="/lovable-uploads/boxrec.png" alt="Bruno Giletta Box Rec" className="h-auto w-auto max-w-[308.8px] max-h-[208.8px]" />
       </a>
       <div className="flex gap-1">

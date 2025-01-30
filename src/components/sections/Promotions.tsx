@@ -5,8 +5,11 @@ export const Promotions = () => {
   const fighters = [
     {
       period: "January 2024 - December 2025",
-      fighter: "Martin Bulacio",
+      fighter: "Martin Ezequiel Bulacio",
       image: "/fighters/MartinBulacio.png",
+      country: "Argentina",
+      debut: "2016-08-26",
+      division: "super middle",
       fights: [
         {
           date: "24/11/2023",
@@ -22,8 +25,11 @@ export const Promotions = () => {
     },
     {
       period: "January 2020 - December 2023",
-      fighter: "Pitbull da Silva",
+      fighter: "Carlos Henrique Rodrigues Da Silva",
       image: "/fighters/CarlosDaSilva.png",
+      country: "Brasil",
+      debut: "2017-03-31",
+      division: "feather",
       fights: [
         {
           date: "24/11/2023",
@@ -39,8 +45,11 @@ export const Promotions = () => {
     },
     {
       period: "February 2019 - November 2022",
-      fighter: "Carlos Mendoza",
+      fighter: "Cristian Martin Roldan",
       image: "/fighters/CristianRoldan.png",
+      country: "Argentina",
+      debut: "2022-05-14",
+      division: "super fly",
       fights: [
       {
         date: "15/08/2022",
@@ -68,7 +77,7 @@ export const Promotions = () => {
           <CarouselContent>
             {fighters.map((fighter, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <FightCard {...fighter} />
+                <FightCard {...fighter} className="text-black dark:text-white" />
               </CarouselItem>
             ))}
           </CarouselContent>
