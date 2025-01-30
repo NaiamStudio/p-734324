@@ -1,5 +1,5 @@
 export const Images = () => {
-  const images = Array.from({ length: 6 }, (_, i) => `public/lovable-uploads/${i + 1}.png`);
+  const images = Array.from({ length: 6 }, (_, i) => `images/${i + 1}.png`);
 
   return (
     <section id="images" className="py-20 bg-background text-foreground">
