@@ -1,7 +1,6 @@
 import { ThemeProvider } from "@/components/theme-provider"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Index from "./pages/Index"
-import Spanish from "./pages/Spanish"
 import NotFound from "./pages/NotFound"
 
 function App() {
@@ -11,7 +10,6 @@ function App() {
         <div className="min-h-screen bg-background text-foreground">
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/es" element={<Spanish />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

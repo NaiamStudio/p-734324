@@ -4,8 +4,26 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 export const Promotions = () => {
   const fighters = [
     {
+      period: "January 2024 - December 2025",
+      fighter: "Martin Bulacio",
+      image: "/fighters/MartinBulacio.png",
+      fights: [
+        {
+          date: "24/11/2023",
+          opponent: "Vs. Alex Easde",
+          result: "Nockaut 6mo Round"
+        },
+        {
+          date: "24/11/2023",
+          opponent: "Vs. Alex Easde",
+          result: "Nockaut 6mo Round"
+        }
+      ]
+    },
+    {
       period: "January 2020 - December 2023",
       fighter: "Pitbull da Silva",
+      image: "/fighters/CarlosDaSilva.png",
       fights: [
         {
           date: "24/11/2023",
@@ -22,6 +40,7 @@ export const Promotions = () => {
     {
       period: "February 2019 - November 2022",
       fighter: "Carlos Mendoza",
+      image: "/fighters/CristianRoldan.png",
       fights: [
       {
         date: "15/08/2022",
@@ -41,7 +60,7 @@ export const Promotions = () => {
   return (
     <section id="promotions" className="py-20 bg-blue-950 text-foreground">
       <div className="container max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-1">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-white">
           Giletta Promotions
         </h2>
         
