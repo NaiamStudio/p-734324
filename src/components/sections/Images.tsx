@@ -3,7 +3,7 @@ interface ImagesProps {
 }
 
 export const Images = ({ lang }: ImagesProps) => {
-  const images = Array.from({ length: 6 }, (_, i) => `images/${i + 1}.png`);
+  const images = Array.from({ length: 6 }, (_, i) => `images/${i + 1}.jpg`);
 
   return (
     <section id="images" className="py-20 bg-background text-foreground">
