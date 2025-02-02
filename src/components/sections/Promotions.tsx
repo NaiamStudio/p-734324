@@ -81,7 +81,20 @@ export const Promotions = ({ lang }: PromotionsProps) => {
           <CarouselContent>
             {fighters.map((fighter, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <FightCard {...fighter} className="text-black dark:text-white" />
+                <FightCard
+                  period={fighter.period}
+                  fighter={fighter.fighter}
+                  image={fighter.image}
+                  country={fighter.country}
+                  debut={fighter.debut}
+                  division={fighter.division}
+                  fights={fighter.fights.map(fight => ({
+                    date: fight.date,
+                    opponent: fight.opponent,
+                    result: fight.result
+                  }))}
+                  className="text-black dark:text-white"
+                />
               </CarouselItem>
             ))}
           </CarouselContent>

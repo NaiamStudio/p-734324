@@ -52,9 +52,9 @@ export const Hero = ({ lang }: HeroProps) => {
               }
               `}
             </style>
-            <h2 className="text-xl md:text-2xl mb-4 md:mb-6 text-white neon-effect-soft blur-effect">
+            <p className="text-xl md:text-2xl mb-4 md:mb-6 text-white neon-effect-soft blur-effect">
               {lang === 'en' ? 'Businessman, promoter\nand boxing manager' : 'Empresario, promotor\ny manager de boxeo'}
-            </h2>
+            </p>
             <style>
               {`
                 .neon-effect-soft {
@@ -104,10 +104,10 @@ export const Hero = ({ lang }: HeroProps) => {
               `}
             </style>
             <div className="space-y-4">
-                <h3 className="text-lg font-medium text-white shadow-text relative inline-block">
+                <p className="text-lg font-medium text-white shadow-text relative inline-block">
                 <span className="relative z-10">{lang === 'en' ? 'Find me on' : 'Encuéntrame en'}</span>
                 <span className="absolute inset-0 bg-black opacity-70 blur-sm z-0"></span>
-                </h3>
+                </p>
               <SocialIcons className="gap-6" />
             </div>
         </div>

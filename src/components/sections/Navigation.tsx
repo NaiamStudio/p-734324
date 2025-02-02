@@ -4,10 +4,13 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { useTheme } from "next-themes"
 import { Moon, Sun } from "lucide-react"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
+
 
 export const Navigation = ({ lang = "es" }: { lang?: "en" | "es" }) => {
   const { theme, setTheme } = useTheme()
   const [isOpen, setIsOpen] = useState(false)
+  const navigate = useNavigate();
 
   const closePanel = () => setIsOpen(false)
 
@@ -20,8 +23,8 @@ export const Navigation = ({ lang = "es" }: { lang?: "en" | "es" }) => {
     },
     en: {
       inicio: "Home",
-      promotions: "Giletta Promotions",
       historia: "My Story",
+      promotions: "Giletta Promotions",
       imagenes: "Images"
     }
   }
@@ -54,6 +57,20 @@ export const Navigation = ({ lang = "es" }: { lang?: "en" | "es" }) => {
                   {texts.imagenes}
                 </a>
               </div>
+                <div className="flex justify-center items-center gap-4 mt-4">
+                  <button 
+                    onClick={() => navigate("/es")}
+                    className={`text-sm font-medium hover:text-primary transition-colors ${lang === "es" ? "text-primary" : "text-black dark:text-foreground"}`}
+                  >
+                    Español
+                  </button>
+                  <button 
+                    onClick={() => navigate("/en")}
+                    className={`text-sm font-medium hover:text-primary transition-colors ${lang === "en" ? "text-primary" : "text-black dark:text-foreground"}`}
+                  >
+                    English
+                  </button>
+                </div>
             </SheetContent>
           </Sheet>
 

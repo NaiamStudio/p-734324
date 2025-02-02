@@ -16,7 +16,7 @@ export const Footer = ({ lang }: FooterProps) => {
               onClick={() => navigate("/es")}
               className={`text-sm font-medium hover:text-primary transition-colors ${lang === "es" ? "text-primary" : "text-black dark:text-foreground"}`}
             >
-              Spanish
+              Español
             </button>
             <button 
               onClick={() => navigate("/en")}
