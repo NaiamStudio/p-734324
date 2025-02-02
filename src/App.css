@@ -2,7 +2,10 @@ html, body {
   width: 100%;
   /* overflow-x: hidden; */
   overflow: hidden;
-  max-width: 100vw;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 
@@ -42,7 +45,7 @@ html, body {
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) { /* Cambia 768px según necesites */
   .max-w-2xl {
-    margin-top: 0.5rem; /* Reducir aún más el margen superior */
+    margin-top: 1cqh; /* Reducir aún más el margen superior */
     padding-top: 1rem; /* Opcional: ajustar el padding superior */
   }
   

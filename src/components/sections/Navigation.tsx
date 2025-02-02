@@ -14,14 +14,14 @@ export const Navigation = ({ lang = "es" }: { lang?: "en" | "es" }) => {
   const menuItems = {
     es: {
       inicio: "Inicio",
-      historia: "Mi historia",
       promotions: "Giletta Promotions",
+      historia: "Mi historia",
       imagenes: "Imágenes"
     },
     en: {
       inicio: "Home",
-      historia: "My Story",
       promotions: "Giletta Promotions",
+      historia: "My Story",
       imagenes: "Images"
     }
   }
@@ -44,11 +44,11 @@ export const Navigation = ({ lang = "es" }: { lang?: "en" | "es" }) => {
                 <a href="#" onClick={closePanel} className="text-center py-2 neon-blue-dark rounded-lg transition-colors duration-300 ease-in-out">
                   {texts.inicio}
                 </a>
-                <a href="#about" onClick={closePanel} className="text-center py-2 neon-blue-dark rounded-lg transition-colors duration-300 ease-in-out">
-                  {texts.historia}
-                </a>
                 <a href="#promotions" onClick={closePanel} className="text-center py-2 neon-blue-dark rounded-lg transition-colors duration-300 ease-in-out">
                   {texts.promotions}
+                </a>
+                <a href="#about" onClick={closePanel} className="text-center py-2 neon-blue-dark rounded-lg transition-colors duration-300 ease-in-out">
+                  {texts.historia}
                 </a>
                 <a href="#images" onClick={closePanel} className="text-center py-2 neon-blue-dark rounded-lg transition-colors duration-300 ease-in-out">
                   {texts.imagenes}
@@ -62,11 +62,11 @@ export const Navigation = ({ lang = "es" }: { lang?: "en" | "es" }) => {
             <a href="#" className="neon-blue-dark rounded-lg px-4 py-2 transition-colors duration-300 ease-in-out">
               {texts.inicio}
             </a>
-            <a href="#about" className="neon-blue-dark rounded-lg px-4 py-2 transition-colors duration-300 ease-in-out">
-              {texts.historia}
-            </a>
             <a href="#promotions" className="neon-blue-dark rounded-lg px-4 py-2 transition-colors duration-300 ease-in-out">
               {texts.promotions}
+            </a>
+            <a href="#about" className="neon-blue-dark rounded-lg px-4 py-2 transition-colors duration-300 ease-in-out">
+              {texts.historia}
             </a>
             <a href="#images" className="neon-blue-dark rounded-lg px-4 py-2 transition-colors duration-300 ease-in-out">
               {texts.imagenes}
