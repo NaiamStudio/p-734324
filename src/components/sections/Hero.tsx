@@ -40,16 +40,16 @@ export const Hero = ({ lang }: HeroProps) => {
             </h1>
             <style>
               {`
-                .neon-effect {
-                  text-shadow: 
-                    0 0 2px #fff,
-                    0 0 4px #fff,
-                    0 0 6px #ff0000,
-                    0 0 8px #ff0000,
-                    0 0 10px #ff0000,
-                    0 0 12px #ff0000,
-                    0 0 14px #ff0000;
-                }
+              .neon-effect {
+                text-shadow: 
+                0 0 2px #fff,
+                0 0 4px #fff,
+                0 0 6px ${theme === 'dark' ? '#0000ff' : '#ff0000'},
+                0 0 8px ${theme === 'dark' ? '#0000ff' : '#ff0000'},
+                0 0 10px ${theme === 'dark' ? '#0000ff' : '#ff0000'},
+                0 0 12px ${theme === 'dark' ? '#0000ff' : '#ff0000'},
+                0 0 14px ${theme === 'dark' ? '#0000ff' : '#ff0000'};
+              }
               `}
             </style>
             <h2 className="text-xl md:text-2xl mb-4 md:mb-6 text-white neon-effect-soft blur-effect">

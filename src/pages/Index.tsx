@@ -8,7 +8,7 @@ import { Navigation } from "@/components/sections/Navigation"
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <main>
+      <main className="p-5">
         <Hero />
         <Promotions />
         <About />
