@@ -3,8 +3,8 @@ import React from 'react';
 const SocialButtons: React.FC = () => {
     const buttonStyle: React.CSSProperties = {
         position: 'fixed',
-        bottom: '20px',
-        right: '20px',
+        bottom: '10%',
+        right: '0%',
         padding: '10px',
     };
 
