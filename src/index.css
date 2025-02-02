@@ -67,7 +67,8 @@ html {
   }
   body {
     @apply bg-background text-foreground transition-colors duration-300;
-    margin: 0;
+    margin-top: 3rem;
+    size-adjust: auto;
     overflow-x: hidden;
   }
 }

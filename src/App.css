@@ -45,13 +45,19 @@ html, body {
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) { /* Cambia 768px según necesites */
   .max-w-2xl {
-    margin-top: 1cqh; /* Reducir aún más el margen superior */
-    padding-top: 1rem; /* Opcional: ajustar el padding superior */
+    margin-top: 2rem; /* Reducir aún más el margen superior */
+    padding-top: 2rem; /* Opcional: ajustar el padding superior */
   }
   
   .text-white {
     font-size: 1rem; /* Reducir el tamaño de la fuente si es necesario */
   }
+
+  /* Dejar un espacio antes del HEAD */
+  h1 {
+    margin-top: 2.5rem;
+  }
+
 }
 
 .card {
