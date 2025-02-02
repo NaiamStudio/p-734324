@@ -3,9 +3,9 @@ import React from 'react';
 const SocialButtons: React.FC = () => {
     const buttonStyle: React.CSSProperties = {
         position: 'fixed',
-        bottom: '10%',
-        right: '0%',
-        padding: '10px',
+        bottom: '-1%',
+        right: '-1%',
+        padding: '0%',
     };
 
     const imgStyle: React.CSSProperties = {
